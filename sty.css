@@ -1,20 +1,49 @@
+/* تنسيق عام للصفحة */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #f0f0f0;
-    text-align: center;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
+/* حاوية لتوسيط المحتوى */
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+}
+
+/* تنسيق العنوان */
 h1 {
     background-color: #4CAF50;
     color: white;
-    padding: 20px;
+    padding: 15px;
+    border-radius: 5px;
 }
 
-img {
-    margin: 20px;
+/* تنسيق معرض الصور */
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.image-gallery img {
+    width: 200px; /* تصغير الصور إلى 200 بيكسل */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+/* تأثير عند تحريك الفأرة على الصور */
+.image-gallery img:hover {
+    transform: scale(1.05);
 }
